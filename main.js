@@ -32,3 +32,20 @@ window.addEventListener('scroll', function () {
     header.classList.remove('scroll') //remove
   }
 })
+
+/* Testimonials carousel slider swiper*/
+const Swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  mausewheel: true,
+  Keyboard: true
+})
+/*ScrollReveal: mostra o elemento quando da scroll na pagina*/
+const ScrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true;
+})
