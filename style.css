@@ -277,7 +277,7 @@ nav.show div.icon-close {
   right: 2.93rem;
 }
 
-#home .image image,
+#home .image img,
 #home .image::before {
   border-radius: 0.25rem;
 }
@@ -323,7 +323,7 @@ nav.show div.icon-close {
   position: relative;
 }
 
-#about .image image,
+#about .image img,
 #about .image::before {
   border-radius: 0.25rem;
 }
@@ -484,14 +484,15 @@ footer .social a:hover {
 
 .back-to-top {
   background: var(--base-color);
+  color: var(--text-color-light);
 
   position: fixed;
   right: 1rem;
   bottom: 1rem;
 
-  padding: 1rem;
+  padding: 0.5rem;
   clip-path: circle();
-  font-size: 1.5;
+  font-size: 1.5rem;
   line-height: 0;
 
   visibility: hidden;

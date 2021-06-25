@@ -20,7 +20,7 @@ for (const link of links) {
   })
 }
 /* mudar o header da pagina quando der scroll*/
-function changeheaderWhenScroll() {
+function changeHeaderWhenScroll() {
   const header = document.querySelector('#header')
   const navHeight = header.offsetHeight
 
@@ -39,8 +39,8 @@ const swiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination'
   },
-  mausewheel: true,
-  Keyboard: true
+  mousewheel: true,
+  keyboard: true
 })
 /*ScrollReveal: mostra o elemento quando da scroll na pagina*/
 const scrollReveal = ScrollReveal({
@@ -54,9 +54,9 @@ scrollReveal.reveal(
   `#home .image, #home .text,
   #about .image, #about .text,
   #services header, #services .card,
-  #testimonials header, #testimonials .testimonials,
+  #testimonials header, #testimonials .testimonials
   #contact .text, #contact .links,
-  footer .band, footer .social,
+  footer .brand, footer .social
   `,
   { interval: 100 }
 )
@@ -64,17 +64,17 @@ scrollReveal.reveal(
 /*Botom volta para o topo*/
 
 function backToTop() {
-  const backTopButton = document.querySelector('.back-to-top')
+  const backToTopButton = document.querySelector('.back-to-top')
 
   if (window.scrollY >= 560) {
-    backTopButton.classList.add('show')
+    backToTopButton.classList.add('show')
   } else {
-    backTopButton.classList.remove('show')
+    backToTopButton.classList.remove('show')
   }
 }
 
 /*When Scroll*/
 window.addEventListener('scroll', function () {
-  changeheaderWhenScroll()
-  backToTop
+  changeHeaderWhenScroll()
+  backToTop()
 })
