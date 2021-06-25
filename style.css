@@ -405,11 +405,11 @@ nav.show div.icon-close {
 /****Swiper****/
 .swiper-slide {
   height: auto;
-  padding: 4r;
+  padding: 4rem 1rem;
 }
 .swiper-pagination-bullet {
   width: 0.75rem;
-  height: 00.75rem;
+  height: 0.75rem;
 }
 
 .swiper-pagination-bullet-active {
@@ -435,6 +435,10 @@ nav.show div.icon-close {
   gap: 2rem;
 }
 
+#contact ul li {
+  display: flex;
+  align-items: center;
+}
 #contact ul li i {
   color: var(--base-color);
 }
